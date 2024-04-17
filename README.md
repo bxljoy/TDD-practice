@@ -19,7 +19,7 @@ I also removed a few unnecessary files, and updated
 ## Install React Boostrap, Vitest, and React Testing Library
 
 ```sh
-npm install -D vitest @vitest/ui eslint-plugin-vitest
+npm install -D vitest @vitest/ui eslint-plugin-vitest @vitest/coverage-v8
 npm install -D jsdom @testing-library/jest-dom @testing-library/react eslint-plugin-jest-dom eslint-plugin-testing-library
 npm install bootstrap react-bootstrap
 ```
@@ -64,7 +64,8 @@ npm install axios
 ## Add test script to package.json `test` object
 
 ```json
-  "test": "vitest --watch"
+  "test": "vitest --watch",
+  "coverage": "vitest --coverage"
 ```
 
 ## Add a test setup file
